@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import ParticleBackground from "../components/portfolio/ParticleBackground";
-import HeroSection from "../components/portfolio/HeroSection";
-import SocialLinksSection from "../components/portfolio/SocialLinksSection";
-import PhilosophySection from "../components/portfolio/PhilosophySection";
-import FooterSection from "../components/portfolio/FooterSection";
+import ParticleBackground from "../Components/portfolio/ParticleBackground";
+import HeroSection from "../Components/portfolio/HeroSection";
+import SocialLinksSection from "../Components/portfolio/SocialLinksSection";
+import PhilosophySection from "../Components/portfolio/PhilosophySection";
+import FooterSection from "../Components/portfolio/FooterSection";
 
 export default function Home() {
   const containerRef = useRef(null);
