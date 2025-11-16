@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 export default function AnimatedTitle() {
   useEffect(() => {
-    const titles = ['anthony.lsc', '< anthony.lsc />', '$ anthony.lsc', '{ anthony.lsc }', '[ anthony.lsc ]'];
+    const titles = ['anthony.lsc', 'anthony', 'LSC'];
     let currentIndex = 0;
 
     const interval = setInterval(() => {
