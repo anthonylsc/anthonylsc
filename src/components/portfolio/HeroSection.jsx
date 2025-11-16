@@ -41,7 +41,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.2 }}
-          className="text-7xl md:text-9xl lg:text-[12rem] font-bold mb-12 tracking-tight"
+          className="text-7xl md:text-9xl lg:text-[12rem] font-bold mb-24 tracking-tight"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
             anthony.lsc
@@ -52,7 +52,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer p-3"
           onClick={scrollToNext}
         >
           <motion.div
