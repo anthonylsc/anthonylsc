@@ -9,18 +9,18 @@ export default function PhilosophySection() {
   const thoughts = [
     {
       icon: Eye,
-      quote: "La réalité n'est qu'une illusion, certes très persistante.",
-      author: "Albert Einstein",
+      quote: "On nous apprend à marcher en rang, mais jamais à choisir le chemin.",
+      author: "Anonyme",
     },
     {
       icon: Globe,
-      quote: "L'univers n'est pas seulement plus étrange que nous le supposons, il est plus étrange que nous pouvons le supposer.",
-      author: "J.B.S. Haldane",
+      quote: "L'homme est né libre, et partout il est dans les fers.",
+      author: "Jean-Jacques Rousseau",
     },
     {
       icon: Sparkles,
-      quote: "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
-      author: "Montesquieu",
+      quote: "L'univers n'est pas seulement plus étrange que nous le supposons, il est plus étrange que nous pouvons le supposer.",
+      author: "J.B.S. Haldane",
     },
   ];
 
