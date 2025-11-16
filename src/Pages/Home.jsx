@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, Suspense } from "react";
 import { motion, useScroll } from "framer-motion";
-import React, { Suspense } from "react";
 const ParticleBackground = React.lazy(() => import("../components/portfolio/ParticleBackground"));
 import HeroSection from "../components/portfolio/HeroSection";
-import SocialLinksSection from "../components/portfolio/SocialLinksSection";
-import PhilosophySection from "../components/portfolio/PhilosophySection";
-import FooterSection from "../components/portfolio/FooterSection";
+const SocialLinksSection = React.lazy(() => import("../components/portfolio/SocialLinksSection"));
+const PhilosophySection = React.lazy(() => import("../components/portfolio/PhilosophySection"));
+const FooterSection = React.lazy(() => import("../components/portfolio/FooterSection"));
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -35,9 +34,15 @@ export default function Home() {
 
       <div className="relative z-10">
         <HeroSection />
-        <SocialLinksSection />
-        <PhilosophySection />
-        <FooterSection />
+        <Suspense fallback={null}>
+          <SocialLinksSection />
+        </Suspense>
+        <Suspense fallback={null}>
+          <PhilosophySection />
+        </Suspense>
+        <Suspense fallback={null}>
+          <FooterSection />
+        </Suspense>
       </div>
     </div>
   );
