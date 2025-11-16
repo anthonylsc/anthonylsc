@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import ParticleBackground from "../components/portfolio/ParticleBackground";
+import React, { Suspense } from "react";
+const ParticleBackground = React.lazy(() => import("../components/portfolio/ParticleBackground"));
 import HeroSection from "../components/portfolio/HeroSection";
 import SocialLinksSection from "../components/portfolio/SocialLinksSection";
 import PhilosophySection from "../components/portfolio/PhilosophySection";
@@ -16,7 +17,9 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="relative w-full overflow-x-hidden bg-[#0a0a0f]">
-      <ParticleBackground />
+      <Suspense fallback={null}>
+        <ParticleBackground />
+      </Suspense>
       
       {/* Gradient overlays */}
       <div className="fixed inset-0 pointer-events-none">
