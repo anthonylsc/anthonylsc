@@ -19,8 +19,8 @@ export default function PhilosophySection() {
     },
     {
       icon: Sparkles,
-      quote: "Nous sommes tous dans le caniveau, mais certains d'entre nous regardent les étoiles.",
-      author: "Oscar Wilde",
+      quote: "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      author: "Montesquieu",
     },
   ];
 
