@@ -10,7 +10,7 @@ export default function PhilosophySection() {
     {
       icon: Eye,
       quote: "On nous apprend à marcher en rang, mais jamais à choisir le chemin.",
-      author: "Anonyme",
+      author: "anthony.lsc",
     },
     {
       icon: Globe,
