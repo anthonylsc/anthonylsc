@@ -5,6 +5,7 @@ import HeroSection from "../components/portfolio/HeroSection";
 const SocialLinksSection = React.lazy(() => import("../components/portfolio/SocialLinksSection"));
 const PhilosophySection = React.lazy(() => import("../components/portfolio/PhilosophySection"));
 const FooterSection = React.lazy(() => import("../components/portfolio/FooterSection"));
+import { applySiteAnimations } from "../utils/gsapInit";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -12,6 +13,8 @@ export default function Home() {
 
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
+    // kick off GSAP site animations (floating shapes, parallax blobs)
+    applySiteAnimations()
   }, []);
 
   return (
@@ -22,8 +25,8 @@ export default function Home() {
       
       {/* Gradient overlays */}
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-purple-900/10 blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-900/10 blur-[120px]" />
+        <div className="bg-shape-top-left absolute top-0 left-0 w-1/2 h-1/2 bg-purple-900/10 blur-[120px]" />
+        <div className="bg-shape-bottom-right absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-900/10 blur-[120px]" />
       </div>
 
       {/* Scroll progress indicator */}

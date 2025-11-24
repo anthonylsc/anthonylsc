@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Sparkles, Globe, Eye } from "lucide-react";
+import { useGsapScroll } from "../../utils/gsapInit";
 
 export default function PhilosophySection() {
   const ref = useRef(null);
+  useGsapScroll(ref)
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const thoughts = [

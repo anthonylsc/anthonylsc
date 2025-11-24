@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useGsapScroll } from "../../utils/gsapInit";
 
 export default function HeroSection() {
+  const ref = useRef(null)
+  useGsapScroll(ref)
   const scrollToNext = () => {
     const nextSection = document.getElementById("social");
     nextSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Animated geometric shapes */}
       <motion.div
-        className="absolute top-20 left-10 w-64 h-64 border border-cyan-500/20 rounded-full"
+        className="hero-shape-1 absolute top-20 left-10 w-64 h-64 border border-cyan-500/20 rounded-full"
         animate={{
           scale: [1, 1.2, 1],
           rotate: [0, 180, 360],
@@ -24,7 +27,7 @@ export default function HeroSection() {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 border border-purple-500/20"
+        className="hero-shape-2 absolute bottom-20 right-10 w-96 h-96 border border-purple-500/20"
         animate={{
           scale: [1, 1.1, 1],
           rotate: [0, -180, -360],
@@ -43,7 +46,7 @@ export default function HeroSection() {
           transition={{ duration: 1.2, delay: 0.2 }}
           className="text-7xl md:text-9xl lg:text-[12rem] font-bold mb-24 tracking-tight"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+          <span className="site-title bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
             anthony.lsc
           </span>
         </motion.h1>

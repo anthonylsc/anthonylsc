@@ -4,11 +4,13 @@ import Home from './Pages/Home'
 import Loading from './components/Loading'
 import NotFound from './Pages/NotFound'
 import AnimatedTitle from './components/AnimatedTitle'
+import MusicPlayer from './components/ui/MusicPlayer2'
 
 export default function App(){
   return (
     <>
       <AnimatedTitle />
+      <MusicPlayer />
       <Router>
         <Suspense fallback={<Loading />}>
           <Routes>

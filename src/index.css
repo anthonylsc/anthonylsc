@@ -4,3 +4,227 @@
 
 html, body, #root { height: 100%; user-select: none; }
 body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+/* Music slider - vertical, liquid-glass style */
+.music-slider{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 120px;
+	height: 16px;
+	background: linear-gradient(90deg, rgba(59,130,246,0.95) 0%, rgba(99,102,241,0.95) 100%);
+	border-radius: 999px;
+	outline: none;
+	transform: rotate(-90deg) translateX(-2px);
+	transform-origin: center;
+	box-shadow: 0 6px 18px rgba(16,24,40,0.25), inset 0 -2px 6px rgba(255,255,255,0.03);
+}
+.music-slider::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width: 22px;
+	height: 22px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#e6f0ff);
+	border: 2px solid rgba(59,130,246,0.95);
+	box-shadow: 0 6px 18px rgba(59,130,246,0.18), inset 0 -2px 4px rgba(0,0,0,0.06);
+}
+.music-slider::-moz-range-thumb{
+	width: 22px;
+	height: 22px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#e6f0ff);
+	border: 2px solid rgba(59,130,246,0.95);
+	box-shadow: 0 6px 18px rgba(59,130,246,0.18), inset 0 -2px 4px rgba(0,0,0,0.06);
+}
+
+/* Slight glass container helper */
+.music-control-glass{
+	background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+	border: 1px solid rgba(255,255,255,0.06);
+	backdrop-filter: blur(8px);
+}
+
+/* Wrapper to contain rotated slider so it appears vertical without layout overflow */
+.music-slider-wrapper{
+	width: 36px;
+	height: 140px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	padding: 6px 0;
+}
+.music-slider-wrapper input.music-slider{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* site title gradient and sizing to enable backgroundPosition animation */
+.site-title{
+	display: inline-block;
+	/* increase background-size so the gradient can flow smoothly */
+	background-size: 300% 100%;
+	background-position: 0% 50%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	will-change: transform, background-position, filter;
+	transition: transform 350ms ease-out;
+}
+
+.site-title-glow {
+	filter: drop-shadow(0 6px 20px rgba(99,102,241,0.12));
+}
+
+/* Bottom player range - styled to look liquid/glass */
+.player-range{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 8px;
+	background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+	border-radius: 999px;
+	outline: none;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+.player-range::-webkit-slider-runnable-track{
+	height: 8px;
+	-webkit-appearance: none;
+}
+.player-range::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#f1f5ff);
+	border: 2px solid rgba(147,51,234,0.95);
+	box-shadow: 0 6px 18px rgba(99,102,241,0.12), inset 0 -2px 4px rgba(0,0,0,0.06);
+	margin-top: -4px;
+}
+.player-range::-moz-range-thumb{
+	width: 16px;
+	height: 16px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#f1f5ff);
+	border: 2px solid rgba(147,51,234,0.95);
+}
+
+/* Play button tweaks to ensure emoji/icon sits perfectly centered */
+.player-play-btn{ display:inline-flex; align-items:center; justify-content:center; line-height:1; }
+
+/* Permanent gradient overlay helper used by the player */
+.permanent-gradient{
+	position: absolute;
+	inset: 0;
+	border-radius: 1rem;
+	background: linear-gradient(90deg, rgba(99,102,241,0.12), rgba(139,92,246,0.10));
+	pointer-events: none;
+	z-index: -1;
+}
+
+/* Volume popover container adjustments to permit overflow and smooth transition */
+.music-volume-popover{
+	transition: opacity 220ms cubic-bezier(.2,.9,.2,1), transform 220ms cubic-bezier(.2,.9,.2,1);
+}
+
+/* music-card helper (no pseudo-element used now) */
+.music-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1.5rem;
+  transition: all 0.25s ease;
+}
+
+/* .music-card.expand-right no longer used; expansion is handled by .right-expander */
+
+/* mini horizontal volume slider that appears next to the icon */
+.player-range-mini{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 8px;
+	background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+	border-radius: 999px;
+	outline: none;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+.player-range-mini::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#f1f5ff);
+	border: 2px solid rgba(147,51,234,0.95);
+	box-shadow: 0 6px 18px rgba(99,102,241,0.12), inset 0 -2px 4px rgba(0,0,0,0.06);
+	margin-top: -3px;
+}
+.player-range-mini::-moz-range-thumb{
+	width: 14px;
+	height: 14px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#f1f5ff);
+	border: 2px solid rgba(147,51,234,0.95);
+}
+
+/* right-expander grows to the right without affecting card layout */
+.music-card .right-expander{
+	position: absolute;
+	right: 12px;
+	left: auto;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 44px;
+	overflow: hidden;
+	pointer-events: none;
+	transition: width 260ms cubic-bezier(.2,.9,.2,1);
+	z-index: 50;
+}
+.music-card .right-expander.open{
+	width: 200px;
+	pointer-events: auto;
+}
+.music-card .right-expander .expander-inner{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 12px;
+	box-sizing: border-box;
+	position: relative;
+	background: transparent;
+}
+
+/* When open, visually extend the same card by adding padding-right; the inner content doesn't shrink because .music-card-inner is non-flexing */
+.music-card.open-right {
+  /* agrandissement réel de la card */
+  padding-right: 220px; /* espace pour le slider */
+  min-width: calc(100% + 220px);
+}
+
+.music-card-inner{ flex: 0 0 auto }
+
+/* adjust vertical slider visual so it looks like the social gradients */
+.music-slider{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 120px;
+	height: 16px;
+	background: linear-gradient(90deg, rgba(147,51,234,0.95) 0%, rgba(99,102,241,0.95) 100%);
+	border-radius: 999px;
+	outline: none;
+	transform: rotate(-90deg) translateX(-2px);
+	transform-origin: center;
+	box-shadow: 0 6px 18px rgba(16,24,40,0.25), inset 0 -2px 6px rgba(255,255,255,0.03);
+}
+.music-slider::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	width: 22px;
+	height: 22px;
+	border-radius: 999px;
+	background: linear-gradient(180deg,#ffffff,#f1f5ff);
+	border: 2px solid rgba(147,51,234,0.95);
+	box-shadow: 0 6px 18px rgba(99,102,241,0.12), inset 0 -2px 4px rgba(0,0,0,0.06);
+}
