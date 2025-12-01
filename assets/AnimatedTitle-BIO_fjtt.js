@@ -1,0 +1,1 @@
+import{r}from"./vendor-CwERnQvP.js";function a(){return r.useEffect(()=>{const e=["anthony.lsc","anthony","LSC"];let t=0;const n=setInterval(()=>{document.title=e[t],t=(t+1)%e.length},1500);return()=>clearInterval(n)},[]),null}export{a as default};
