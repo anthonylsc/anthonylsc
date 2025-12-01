@@ -75,10 +75,10 @@ export default function PhilosophySection() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-cyan-500/20 to-pink-500/20 blur-3xl" />
           <div className="relative p-12 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10">
             <p className="text-2xl md:text-3xl text-gray-200 font-light text-center leading-relaxed">
-              "Dans l'immensité du cosmos,
+              "On nous apprend à marcher en rang,
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400">
-                nous sommes des étoiles prenant conscience d'elles-mêmes
+                mais jamais à choisir le chemin.
               </span>
               ."
             </p>

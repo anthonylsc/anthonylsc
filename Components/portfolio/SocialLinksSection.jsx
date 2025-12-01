@@ -63,7 +63,7 @@ export default function SocialLinksSection() {
               <img src="https://i.goopics.net/21n0w9.png" alt="rShop logo" className="w-16 h-16 rounded-lg object-cover" />
               <div className="flex-1 min-w-0">
                 <h3 className="text-2xl font-bold text-white">rShop</h3>
-                <p className="text-sm text-gray-300">Créations & Aide Fivem Asset</p>
+                <p className="text-sm text-gray-300">FiveM Shop</p>
                 <div className="mt-3 flex gap-3">
                   <a href="https://rshop.tebex.io/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-full bg-gradient-to-br from-purple-600 to-violet-500 hover:scale-[1.02] transform transition-all shadow-lg text-white text-sm font-medium">Visiter le site</a>
                   <a href="https://discord.gg/twxHb8cNu9" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-full border border-white/10 text-white text-sm hover:bg-white/5 hover:scale-[1.02] transform transition-all">Rejoindre le Discord</a>

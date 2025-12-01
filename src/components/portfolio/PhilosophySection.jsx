@@ -11,13 +11,13 @@ export default function PhilosophySection() {
   const thoughts = [
     {
       icon: Eye,
-      quote: "On nous apprend à marcher en rang, mais jamais à choisir le chemin.",
-      author: "anthony.lsc",
+      quote: "Le temps est linéaire pour ceux qui marchent dans une seule direction, mais pour la pensée, il n’a ni début ni fin.",
+      author: "Henri Bergson",
     },
     {
       icon: Globe,
-      quote: "L'homme est né libre, et partout il est dans les fers.",
-      author: "Jean-Jacques Rousseau",
+      quote: "La plupart des gens ne veulent pas la vérité. Ils veulent juste des certitudes confortables.",
+      author: "Carl Gustav Jung",
     },
     {
       icon: Sparkles,
@@ -77,14 +77,14 @@ export default function PhilosophySection() {
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-cyan-500/20 to-pink-500/20 blur-3xl" />
           <div className="relative p-12 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10">
             <p className="text-2xl md:text-3xl text-gray-200 font-light text-center leading-relaxed">
-              "Dans l'immensité du cosmos,
+              "On nous apprend à marcher en rang,
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400">
-                nous sommes des étoiles prenant conscience d'elles-mêmes
+                mais jamais à choisir le chemin.
               </span>
               ."
             </p>
-            <p className="text-gray-500 text-center mt-6">— Carl Sagan</p>
+            <p className="text-gray-500 text-center mt-6">— anthony.lsc</p>
           </div>
         </motion.div>
       </div>
