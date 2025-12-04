@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://www.anthonylsc.fr/</loc>
     <lastmod>2025-12-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- Writings list page -->
   <url>
     <loc>https://www.anthonylsc.fr/writings</loc>
     <lastmod>2025-12-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Le Déjà-Vu : Quand le Présent Semble Déjà Vécu - Phénomènes -->
   <url>
     <loc>https://www.anthonylsc.fr/writings/1</loc>
     <lastmod>2025-12-04</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
     <news:news>
       <news:publication>
-        <news:name>anthony.lsc - Le Déjà-Vu : Quand le Présent Semble Déjà Vécu</news:name>
+        <news:name>anthony.lsc - Philosophy & Thoughts</news:name>
+        <news:language>fr</news:language>
       </news:publication>
       <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
       <news:title>Le Déjà-Vu : Quand le Présent Semble Déjà Vécu</news:title>
-      <news:keywords>déjà-vu,mémoire,neurosciences,psychologie,philosophie</news:keywords>
+      <news:keywords>Phénomènes</news:keywords>
     </news:news>
   </url>
+  <!-- La Liberté Perdue : Réflexions sur l'Homme et la Société - Société & Philosophie -->
   <url>
     <loc>https://www.anthonylsc.fr/writings/2</loc>
     <lastmod>2025-12-04</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
     <news:news>
       <news:publication>
-        <news:name>anthony.lsc - La Liberté Perdue : Réflexions sur l'Homme et la Société</news:name>
+        <news:name>anthony.lsc - Philosophy & Thoughts</news:name>
+        <news:language>fr</news:language>
       </news:publication>
       <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
       <news:title>La Liberté Perdue : Réflexions sur l'Homme et la Société</news:title>
-      <news:keywords>liberté,société,philosophie,humain,éducation</news:keywords>
+      <news:keywords>Société & Philosophie</news:keywords>
     </news:news>
   </url>
 </urlset>
