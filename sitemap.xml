@@ -23,7 +23,7 @@
     <priority>0.85</priority>
     <news:news>
       <news:publication>
-        <news:name>anthony.lsc - Philosophy & Thoughts</news:name>
+        <news:name>anthony.lsc - Philosophy &amp; Thoughts</news:name>
         <news:language>fr</news:language>
       </news:publication>
       <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
@@ -31,7 +31,7 @@
       <news:keywords>Phénomènes</news:keywords>
     </news:news>
   </url>
-  <!-- La Liberté Perdue : Réflexions sur l'Homme et la Société - Société & Philosophie -->
+  <!-- La Liberté Perdue : Réflexions sur l&apos;Homme et la Société - Société &amp; Philosophie -->
   <url>
     <loc>https://www.anthonylsc.fr/writings/2</loc>
     <lastmod>2025-12-04</lastmod>
@@ -39,12 +39,12 @@
     <priority>0.85</priority>
     <news:news>
       <news:publication>
-        <news:name>anthony.lsc - Philosophy & Thoughts</news:name>
+        <news:name>anthony.lsc - Philosophy &amp; Thoughts</news:name>
         <news:language>fr</news:language>
       </news:publication>
       <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
-      <news:title>La Liberté Perdue : Réflexions sur l'Homme et la Société</news:title>
-      <news:keywords>Société & Philosophie</news:keywords>
+      <news:title>La Liberté Perdue : Réflexions sur l&apos;Homme et la Société</news:title>
+      <news:keywords>Société &amp; Philosophie</news:keywords>
     </news:news>
   </url>
 </urlset>

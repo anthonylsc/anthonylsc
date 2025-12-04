@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>anthony.lsc - Philosophy & Thoughts</title>
+    <title>anthony.lsc - Philosophy &amp; Thoughts</title>
     <link>https://www.anthonylsc.fr</link>
-    <description>Explorations philosophiques, pensées et réflexions sur la vie, l'esprit et l'existence.</description>
+    <description>Explorations philosophiques, pensées et réflexions sur la vie, l&apos;esprit et l&apos;existence.</description>
     <language>fr</language>
-    <lastBuildDate>Thu, 04 Dec 2025 18:22:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 18:37:04 GMT</lastBuildDate>
     <atom:link href="https://www.anthonylsc.fr/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Le Déjà-Vu : Quand le Présent Semble Déjà Vécu</title>
@@ -20,7 +20,7 @@
     <link>https://www.anthonylsc.fr/writings/2</link>
     <guid isPermaLink="true">https://www.anthonylsc.fr/writings/2</guid>
     <description>Une plongée dans la liberté humaine, la société, et ce que signifie vraiment vivre en tant qu&apos;humain.</description>
-    <category>Société & Philosophie</category>
+    <category>Société &amp; Philosophie</category>
     <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
   </item>
   </channel>
