@@ -1,3 +1,23 @@
 User-agent: *
 Allow: /
-Sitemap: https://anthonylsc.github.io/anthonylsc/sitemap.xml
+Allow: /writings
+Allow: /writings/
+
+# Spécifique Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Spécifique Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Interdire les mauvais bots
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://www.anthonylsc.fr/sitemap.xml
