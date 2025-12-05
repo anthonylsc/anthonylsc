@@ -4,14 +4,14 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.anthonylsc.fr/</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Writings list page -->
   <url>
     <loc>https://www.anthonylsc.fr/writings</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -45,6 +45,22 @@
       <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
       <news:title>La Liberté Perdue : Réflexions sur l&apos;Homme et la Société</news:title>
       <news:keywords>Société &amp; Philosophie</news:keywords>
+    </news:news>
+  </url>
+  <!-- La Religion : Construction Humaine, Illusion, Sens et Contrôle - Société -->
+  <url>
+    <loc>https://www.anthonylsc.fr/writings/3</loc>
+    <lastmod>2025-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>anthony.lsc - Philosophy &amp; Thoughts</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-04T00:00:00.000Z</news:publication_date>
+      <news:title>La Religion : Construction Humaine, Illusion, Sens et Contrôle</news:title>
+      <news:keywords>Société</news:keywords>
     </news:news>
   </url>
 </urlset>
