@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /public/
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Spécifique Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Spécifique Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Interdire les bots agressifs
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+User-agent: MJ12bot
+Crawl-delay: 10
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.anthonylsc.fr/sitemap.xml
+
+# Cache policy
+# Images, CSS, JS can be cached for 30 days
+# HTML should be re-validated
+Request-rate: 1/1s
+
+# Sitemap
+Sitemap: https://www.anthonylsc.fr/sitemap.xml
