@@ -1,0 +1,13 @@
+# Node modules (sauf server si tu veux pousser le backend)
+node_modules/
+server/node_modules/
+
+# Environnement
+.env
+server/.env
+
+# Build outputs
+dist/
+public/
+server/dist/
+server/build/
